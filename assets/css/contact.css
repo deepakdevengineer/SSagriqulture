@@ -1,0 +1,130 @@
+/* CSS styles */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #f1f1f1;
+    font-family: 'Merriweather', sans-serif;
+    padding: 1em;
+}
+
+h1 {
+    text-align: center;
+    color: #a8a8a8;
+    text-shadow: 1px 1px 0 rgba(255, 255, 255, 1);
+}
+
+form {
+    max-width: 600px;
+    text-align: center;
+    margin: 20px auto;
+}
+
+input,
+textarea {
+    border: 0;
+    outline: 0;
+    padding: 1em;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    resize: none;
+}
+
+input[type="submit"] {
+    color: white;
+    background-color: #2ecc71; /* Green color */
+    cursor: pointer;
+    border: none;
+    outline: none;
+    padding: 1em;
+    border-radius: 8px;
+    width: 100%;
+    margin-top: 1em;
+    font-family: 'Merriweather', sans-serif;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #27ae60; /* Darker green on hover */
+    box-shadow: 0 1px 1px 1px rgba(170, 170, 170, 0.6);
+}
+
+textarea {
+    height: 126px;
+}
+
+.half {
+    float: left;
+    width: 48%;
+    margin-bottom: 1em;
+}
+
+.right {
+    width: 50%;
+}
+
+.left {
+    margin-right: 2%;
+}
+
+@media (max-width: 480px) {
+    .half {
+        width: 100%;
+        float: none;
+        margin-bottom: 0;
+    }
+}
+
+/* Clearfix */
+.cf:before,
+.cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.footer-contact-wrap {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .footer-contact-wrap p,
+  .footer-contact-wrap ul {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+  }
+  
+  .list-wrap {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    text-align: center;
+  }
+  
+  .list-wrap li {
+    display: inline-block;
+    margin-right: 20px;
+    color: #555; /* Adjust the color as needed */
+  }
+  
+  .list-wrap li:last-child {
+    margin-right: 0;
+  }
+  
+  .list-wrap li i {
+    margin-right: 5px;
+  }
